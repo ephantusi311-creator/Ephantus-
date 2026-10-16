@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports | Del Monte Kenya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <img src="assets/del-monte-logo.svg" alt="Del Monte Kenya logo" class="brand-logo" />
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">
+            <span class="nav-icon">▣</span>
+            <span>Dashboard</span>
+          </a>
+          <a href="employees.html" class="nav-link">
+            <span class="nav-icon">☰</span>
+            <span>Employee Records</span>
+          </a>
+          <a href="add-employee.html" class="nav-link">
+            <span class="nav-icon">＋</span>
+            <span>Add Employee</span>
+          </a>
+          <a href="departments.html" class="nav-link">
+            <span class="nav-icon">◫</span>
+            <span>Departments</span>
+          </a>
+          <a href="reports.html" class="nav-link active">
+            <span class="nav-icon">◔</span>
+            <span>Reports</span>
+          </a>
+          <a href="settings.html" class="nav-link">
+            <span class="nav-icon">⚙</span>
+            <span>Settings</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="mini-card">
+            <p class="eyebrow">Analytics</p>
+            <strong>Monthly snapshot</strong>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Insights</p>
+            <h1>Reports</h1>
+          </div>
+        </header>
+
+        <section class="content-grid two-column">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Department summary</p>
+                <h2>Staff by department</h2>
+              </div>
+            </div>
+
+            <div class="bar-chart" id="report-bars">
+              <div class="chart-row"><span>Production</span><div class="bar-track"><span style="width: 78%"></span></div><small>188</small></div>
+              <div class="chart-row"><span>Sales</span><div class="bar-track"><span style="width: 52%"></span></div><small>62</small></div>
+              <div class="chart-row"><span>Logistics</span><div class="bar-track"><span style="width: 45%"></span></div><small>54</small></div>
+              <div class="chart-row"><span>Finance</span><div class="bar-track"><span style="width: 35%"></span></div><small>42</small></div>
+              <div class="chart-row"><span>HR</span><div class="bar-track"><span style="width: 26%"></span></div><small>31</small></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Employment status</p>
+                <h2>Active vs non-active</h2>
+              </div>
+            </div>
+
+            <div class="status-summary">
+              <div class="ring-item">
+                <div class="ring ring-active"><span>88%</span></div>
+                <p>Active</p>
+              </div>
+              <div class="ring-item">
+                <div class="ring ring-leave"><span>7%</span></div>
+                <p>Leave</p>
+              </div>
+              <div class="ring-item">
+                <div class="ring ring-probation"><span>3%</span></div>
+                <p>Probation</p>
+              </div>
+              <div class="ring-item">
+                <div class="ring ring-terminated"><span>2%</span></div>
+                <p>Terminated</p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

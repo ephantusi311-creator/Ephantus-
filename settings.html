@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings | Del Monte Kenya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <img src="assets/del-monte-logo.svg" alt="Del Monte Kenya logo" class="brand-logo" />
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">
+            <span class="nav-icon">▣</span>
+            <span>Dashboard</span>
+          </a>
+          <a href="employees.html" class="nav-link">
+            <span class="nav-icon">☰</span>
+            <span>Employee Records</span>
+          </a>
+          <a href="add-employee.html" class="nav-link">
+            <span class="nav-icon">＋</span>
+            <span>Add Employee</span>
+          </a>
+          <a href="departments.html" class="nav-link">
+            <span class="nav-icon">◫</span>
+            <span>Departments</span>
+          </a>
+          <a href="reports.html" class="nav-link">
+            <span class="nav-icon">◔</span>
+            <span>Reports</span>
+          </a>
+          <a href="settings.html" class="nav-link active">
+            <span class="nav-icon">⚙</span>
+            <span>Settings</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="mini-card">
+            <p class="eyebrow">Preferences</p>
+            <strong>Customised</strong>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Configuration</p>
+            <h1>Settings</h1>
+          </div>
+        </header>
+
+        <section class="content-grid two-column">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Profile</p>
+                <h2>System administrator</h2>
+              </div>
+            </div>
+
+            <div class="profile-card">
+              <div class="profile-avatar">MW</div>
+              <div>
+                <h3>Mercy Wanjiku</h3>
+                <p>Human Resources Manager</p>
+                <p>mercy.wanjiku@delmonte-ke.co.ke</p>
+              </div>
+            </div>
+
+            <div class="settings-list">
+              <div class="setting-item">
+                <span>Auto-save employee updates</span>
+                <label class="switch"><input type="checkbox" checked /><span class="slider"></span></label>
+              </div>
+              <div class="setting-item">
+                <span>Enable email notifications</span>
+                <label class="switch"><input type="checkbox" checked /><span class="slider"></span></label>
+              </div>
+              <div class="setting-item">
+                <span>Weekly performance digest</span>
+                <label class="switch"><input type="checkbox" /><span class="slider"></span></label>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Environment</p>
+                <h2>System information</h2>
+              </div>
+            </div>
+
+            <ul class="info-list">
+              <li><span>Application</span><strong>Employee Records Management System</strong></li>
+              <li><span>Version</span><strong>1.0.0 Demo</strong></li>
+              <li><span>Platform</span><strong>Static HTML / CSS / JS</strong></li>
+              <li><span>Data mode</span><strong>Sample records only</strong></li>
+              <li><span>Storage</span><strong>Browser localStorage demo</strong></li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

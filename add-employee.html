@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Employee | Del Monte Kenya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <img src="assets/del-monte-logo.svg" alt="Del Monte Kenya logo" class="brand-logo" />
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">
+            <span class="nav-icon">▣</span>
+            <span>Dashboard</span>
+          </a>
+          <a href="employees.html" class="nav-link">
+            <span class="nav-icon">☰</span>
+            <span>Employee Records</span>
+          </a>
+          <a href="add-employee.html" class="nav-link active">
+            <span class="nav-icon">＋</span>
+            <span>Add Employee</span>
+          </a>
+          <a href="departments.html" class="nav-link">
+            <span class="nav-icon">◫</span>
+            <span>Departments</span>
+          </a>
+          <a href="reports.html" class="nav-link">
+            <span class="nav-icon">◔</span>
+            <span>Reports</span>
+          </a>
+          <a href="settings.html" class="nav-link">
+            <span class="nav-icon">⚙</span>
+            <span>Settings</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="mini-card">
+            <p class="eyebrow">New hire</p>
+            <strong>Ready to add</strong>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Recruitment</p>
+            <h1>Add Employee</h1>
+          </div>
+        </header>
+
+        <section class="panel form-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Profile details</p>
+              <h2>New employee registration</h2>
+            </div>
+          </div>
+
+          <form id="employee-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="employeeId">Employee ID</label>
+                <input id="employeeId" name="employeeId" type="text" placeholder="DMK-150" required />
+              </div>
+
+              <div class="field">
+                <label for="fullName">Full name</label>
+                <input id="fullName" name="fullName" type="text" placeholder="Jane Njeri" required />
+              </div>
+
+              <div class="field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" placeholder="jane.njeri@email.com" required />
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel" placeholder="+254 712 345 678" required />
+              </div>
+
+              <div class="field">
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                  <option value="">Select department</option>
+                  <option value="Finance">Finance</option>
+                  <option value="Production">Production</option>
+                  <option value="Human Resources">Human Resources</option>
+                  <option value="Logistics">Logistics</option>
+                  <option value="Sales">Sales</option>
+                  <option value="IT">IT</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="jobTitle">Job title</label>
+                <input id="jobTitle" name="jobTitle" type="text" placeholder="Accounts Officer" required />
+              </div>
+
+              <div class="field">
+                <label for="dateHired">Date of employment</label>
+                <input id="dateHired" name="dateHired" type="date" required />
+              </div>
+
+              <div class="field">
+                <label for="status">Employment status</label>
+                <select id="status" name="status" required>
+                  <option value="">Select status</option>
+                  <option value="Active">Active</option>
+                  <option value="On Leave">On Leave</option>
+                  <option value="Probation">Probation</option>
+                  <option value="Terminated">Terminated</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="reset" class="secondary-btn">Clear form</button>
+              <button type="submit" class="primary-btn">Save employee</button>
+            </div>
+
+            <div id="form-message" class="form-message" aria-live="polite"></div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

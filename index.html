@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Del Monte Kenya | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <img src="assets/del-monte-logo.svg" alt="Del Monte Kenya logo" class="brand-logo" />
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link active">
+            <span class="nav-icon">▣</span>
+            <span>Dashboard</span>
+          </a>
+          <a href="employees.html" class="nav-link">
+            <span class="nav-icon">☰</span>
+            <span>Employee Records</span>
+          </a>
+          <a href="add-employee.html" class="nav-link">
+            <span class="nav-icon">＋</span>
+            <span>Add Employee</span>
+          </a>
+          <a href="departments.html" class="nav-link">
+            <span class="nav-icon">◫</span>
+            <span>Departments</span>
+          </a>
+          <a href="reports.html" class="nav-link">
+            <span class="nav-icon">◔</span>
+            <span>Reports</span>
+          </a>
+          <a href="settings.html" class="nav-link">
+            <span class="nav-icon">⚙</span>
+            <span>Settings</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="mini-card">
+            <p class="eyebrow">System status</p>
+            <strong>Operational</strong>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Overview</p>
+            <h1>Dashboard</h1>
+          </div>
+          <div class="user-panel">
+            <div class="user-meta">
+              <span class="user-name">Mercy Wanjiku</span>
+              <span class="user-role">HR Manager</span>
+            </div>
+            <div class="avatar">MW</div>
+          </div>
+        </header>
+
+        <section class="stats-grid">
+          <article class="stat-card accent-green">
+            <div class="stat-icon">👥</div>
+            <div>
+              <p>Total Employees</p>
+              <h3>486</h3>
+            </div>
+          </article>
+
+          <article class="stat-card accent-dark">
+            <div class="stat-icon">🏢</div>
+            <div>
+              <p>Departments</p>
+              <h3>12</h3>
+            </div>
+          </article>
+
+          <article class="stat-card accent-gold">
+            <div class="stat-icon">✅</div>
+            <div>
+              <p>Active Employees</p>
+              <h3>431</h3>
+            </div>
+          </article>
+
+          <article class="stat-card accent-red">
+            <div class="stat-icon">📌</div>
+            <div>
+              <p>Pending Reviews</p>
+              <h3>19</h3>
+            </div>
+          </article>
+        </section>
+
+        <section class="content-grid two-column">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Population</p>
+                <h2>Employee distribution</h2>
+              </div>
+            </div>
+
+            <div class="distribution-list">
+              <div class="distribution-item">
+                <div class="label-row">
+                  <span>Production</span>
+                  <span>38%</span>
+                </div>
+                <div class="progress-bar">
+                  <span style="width: 38%"></span>
+                </div>
+              </div>
+
+              <div class="distribution-item">
+                <div class="label-row">
+                  <span>Logistics</span>
+                  <span>22%</span>
+                </div>
+                <div class="progress-bar">
+                  <span style="width: 22%"></span>
+                </div>
+              </div>
+
+              <div class="distribution-item">
+                <div class="label-row">
+                  <span>Finance</span>
+                  <span>16%</span>
+                </div>
+                <div class="progress-bar">
+                  <span style="width: 16%"></span>
+                </div>
+              </div>
+
+              <div class="distribution-item">
+                <div class="label-row">
+                  <span>Human Resources</span>
+                  <span>12%</span>
+                </div>
+                <div class="progress-bar">
+                  <span style="width: 12%"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Latest updates</p>
+                <h2>Recent employee activity</h2>
+              </div>
+            </div>
+
+            <ul class="activity-list">
+              <li>
+                <div class="activity-dot green"></div>
+                <div>
+                  <strong>John Kimani</strong>
+                  <p>Joined the Quality Assurance team</p>
+                </div>
+                <span>Today</span>
+              </li>
+              <li>
+                <div class="activity-dot blue"></div>
+                <div>
+                  <strong>Abigail Mugo</strong>
+                  <p>Updated employment details</p>
+                </div>
+                <span>2 days</span>
+              </li>
+              <li>
+                <div class="activity-dot gold"></div>
+                <div>
+                  <strong>Daniel Otieno</strong>
+                  <p>Submitted training completion record</p>
+                </div>
+                <span>3 days</span>
+              </li>
+              <li>
+                <div class="activity-dot red"></div>
+                <div>
+                  <strong>Grace Wairimu</strong>
+                  <p>Scheduled annual review</p>
+                </div>
+                <span>4 days</span>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Directory</p>
+              <h2>Recent employee list</h2>
+            </div>
+            <a href="employees.html" class="link-btn">View all</a>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Employee ID</th>
+                  <th>Full name</th>
+                  <th>Department</th>
+                  <th>Job title</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>DMK-101</td>
+                  <td>Jane Njeri</td>
+                  <td>Finance</td>
+                  <td>Accounts Officer</td>
+                  <td><span class="status-badge active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>DMK-104</td>
+                  <td>David Kariuki</td>
+                  <td>Production</td>
+                  <td>Shift Supervisor</td>
+                  <td><span class="status-badge active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>DMK-117</td>
+                  <td>Patricia Akinyi</td>
+                  <td>Human Resources</td>
+                  <td>HR Assistant</td>
+                  <td><span class="status-badge leave">On Leave</span></td>
+                </tr>
+                <tr>
+                  <td>DMK-129</td>
+                  <td>Lucas Muema</td>
+                  <td>Logistics</td>
+                  <td>Warehouse Coordinator</td>
+                  <td><span class="status-badge active">Active</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Departments | Del Monte Kenya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <img src="assets/del-monte-logo.svg" alt="Del Monte Kenya logo" class="brand-logo" />
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">
+            <span class="nav-icon">▣</span>
+            <span>Dashboard</span>
+          </a>
+          <a href="employees.html" class="nav-link">
+            <span class="nav-icon">☰</span>
+            <span>Employee Records</span>
+          </a>
+          <a href="add-employee.html" class="nav-link">
+            <span class="nav-icon">＋</span>
+            <span>Add Employee</span>
+          </a>
+          <a href="departments.html" class="nav-link active">
+            <span class="nav-icon">◫</span>
+            <span>Departments</span>
+          </a>
+          <a href="reports.html" class="nav-link">
+            <span class="nav-icon">◔</span>
+            <span>Reports</span>
+          </a>
+          <a href="settings.html" class="nav-link">
+            <span class="nav-icon">⚙</span>
+            <span>Settings</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="mini-card">
+            <p class="eyebrow">Structure</p>
+            <strong>12 active units</strong>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Organisation</p>
+            <h1>Departments</h1>
+          </div>
+        </header>
+
+        <section class="card-grid departments-grid">
+          <article class="panel department-card">
+            <div class="panel-header compact">
+              <h3>Finance</h3>
+              <span class="badge">42 staff</span>
+            </div>
+            <p>Responsible for budgeting, payroll, accounting controls, and financial planning across company operations.</p>
+          </article>
+
+          <article class="panel department-card">
+            <div class="panel-header compact">
+              <h3>Production</h3>
+              <span class="badge">188 staff</span>
+            </div>
+            <p>Coordinates manufacturing, process control, packaging, and plant efficiency to maintain quality output.</p>
+          </article>
+
+          <article class="panel department-card">
+            <div class="panel-header compact">
+              <h3>Human Resources</h3>
+              <span class="badge">31 staff</span>
+            </div>
+            <p>Manages recruitment, employee engagement, records management, onboarding, and policy compliance.</p>
+          </article>
+
+          <article class="panel department-card">
+            <div class="panel-header compact">
+              <h3>Logistics</h3>
+              <span class="badge">54 staff</span>
+            </div>
+            <p>Oversees warehousing, transport planning, inventory distribution, and shipment coordination.</p>
+          </article>
+
+          <article class="panel department-card">
+            <div class="panel-header compact">
+              <h3>Sales</h3>
+              <span class="badge">62 staff</span>
+            </div>
+            <p>Drives customer acquisition, regional sales performance, retail partnerships, and revenue growth.</p>
+          </article>
+
+          <article class="panel department-card">
+            <div class="panel-header compact">
+              <h3>Information Technology</h3>
+              <span class="badge">24 staff</span>
+            </div>
+            <p>Supports digital infrastructure, system administration, process automation, and cybersecurity readiness.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

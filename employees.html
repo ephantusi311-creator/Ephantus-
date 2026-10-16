@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Records | Del Monte Kenya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <img src="assets/del-monte-logo.svg" alt="Del Monte Kenya logo" class="brand-logo" />
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">
+            <span class="nav-icon">▣</span>
+            <span>Dashboard</span>
+          </a>
+          <a href="employees.html" class="nav-link active">
+            <span class="nav-icon">☰</span>
+            <span>Employee Records</span>
+          </a>
+          <a href="add-employee.html" class="nav-link">
+            <span class="nav-icon">＋</span>
+            <span>Add Employee</span>
+          </a>
+          <a href="departments.html" class="nav-link">
+            <span class="nav-icon">◫</span>
+            <span>Departments</span>
+          </a>
+          <a href="reports.html" class="nav-link">
+            <span class="nav-icon">◔</span>
+            <span>Reports</span>
+          </a>
+          <a href="settings.html" class="nav-link">
+            <span class="nav-icon">⚙</span>
+            <span>Settings</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="mini-card">
+            <p class="eyebrow">Records</p>
+            <strong>486 total</strong>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Human resources</p>
+            <h1>Employee Records</h1>
+          </div>
+          <div class="header-actions">
+            <div class="search-box">
+              <label class="sr-only" for="employee-search">Search employees</label>
+              <input id="employee-search" type="search" placeholder="Search by name or ID" />
+            </div>
+            <a href="add-employee.html" class="primary-btn">+ Add employee</a>
+          </div>
+        </header>
+
+        <section class="panel">
+          <div class="panel-header table-controls">
+            <div>
+              <p class="eyebrow">Directory</p>
+              <h2>Employee master list</h2>
+            </div>
+            <div class="filters-wrap">
+              <select id="department-filter" aria-label="Filter by department">
+                <option value="all">All departments</option>
+                <option value="Finance">Finance</option>
+                <option value="Production">Production</option>
+                <option value="Human Resources">Human Resources</option>
+                <option value="Logistics">Logistics</option>
+                <option value="Sales">Sales</option>
+                <option value="IT">IT</option>
+              </select>
+              <select id="status-filter" aria-label="Filter by employment status">
+                <option value="all">All status</option>
+                <option value="Active">Active</option>
+                <option value="On Leave">On Leave</option>
+                <option value="Probation">Probation</option>
+                <option value="Terminated">Terminated</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Employee ID</th>
+                  <th>Full name</th>
+                  <th>Department</th>
+                  <th>Job title</th>
+                  <th>Contact</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="employee-table-body"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
